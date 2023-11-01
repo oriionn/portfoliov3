@@ -4,7 +4,7 @@
   import FaGithubSquare from "svelte-icons/fa/FaGithubSquare.svelte";
 </script>
 
-<div class="socials absolute bottom-3 right-2 flex flex-row">
+<div class="socials fixed bottom-3 right-7 flex flex-row">
   <a href="https://twitter.oriondev.fr" target="_blank" class="text-primary hover:text-secondary mr-3">
     <div class="icon">
       <FaTwitterSquare />
