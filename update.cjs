@@ -10,7 +10,7 @@ const notion = new Client({ auth: NOTION_TOKEN });
   let data = res.results.map((c) => {
     return { name: c.properties["Nom"].title[0].text.content, percent: c.properties["Notation"].number }
   })
-  fs.writeFileSync("competences.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync("competences.json", JSON.stringify(data.reverse(), null, 2));
 
   let resp = await notion.databases.query({ database_id: NOTION_DB_PROJECTS });
   let data2 = resp.results.map((c) => {
@@ -21,5 +21,5 @@ const notion = new Client({ auth: NOTION_TOKEN });
       image: c.properties["Logo"].url
     }
   });
-  fs.writeFileSync("projects.json", JSON.stringify(data2, null, 2));
+  fs.writeFileSync("projects.json", JSON.stringify(data2.reverse(), null, 2));
 })();
