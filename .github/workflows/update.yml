@@ -1,0 +1,25 @@
+name: Récupérer les données de Notion
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Installer les dépendances Node.js
+        run: npm i
+      - name: Lancer une analyse
+        run: node update.cjs
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DB_COMPETENCES: ${{ secrets.NOTION_DB_COMPETENCES }}
+          NOTION_DB_PROJECTS: ${{ secrets.NOTION_DB_PROJECTS }}
+      - name: Ajouter les données dans le repo
+        run: |
+          git config --global user.email "contact@oriondev.fr"
+          git config --global user.name "github-actions"
+          git add competences.json -f
+          git add projects.json -f
+          git commit -m "Ajout des données depuis Notion"
+          git push
