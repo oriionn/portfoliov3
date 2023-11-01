@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "name": "NoX",
+    "description": "Remove new logo of X for keep the little blue bird (Archived)",
+    "link": "https://github.com/oriionn/nox",
+    "image": "https://cdn.oriondev.fr/projects/nox.svg"
+  },
+  {
+    "name": "Banner Generator",
+    "description": "Generate banner for my projects",
+    "link": "https://banner.oriondev.fr",
+    "image": "https://cdn.oriondev.fr/projects/bannergenerator.svg"
+  },
+  {
+    "name": "Qik",
+    "description": "A simple & configurable template manager.",
+    "link": "https://github.com/oriionn/qik",
+    "image": "https://cdn.oriondev.fr/projects/qik.svg"
+  },
+  {
+    "name": "Additional Connections ",
+    "description": "Add connections for Discord",
+    "link": "https://github.com/oriionn/additional-connections",
+    "image": "https://cdn.oriondev.fr/projects/additionalconnections.svg"
+  },
+  {
+    "name": "Quecto",
+    "description": "Quecto is a universal, open-source solution that lets you create your own link shortening system.",
+    "link": "https://github.com/oriionn/quecto",
+    "image": "https://cdn.oriondev.fr/projects/quecto.svg"
+  }
+]
