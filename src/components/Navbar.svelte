@@ -45,7 +45,7 @@
   </div>
 </nav>
 
-<style>
+<style lang="postcss">
   .hover-underline-animation {
     display: inline-block;
     position: relative;

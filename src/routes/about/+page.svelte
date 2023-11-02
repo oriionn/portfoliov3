@@ -1,16 +1,3 @@
-<script>
-  import "../app.css";
-  import Navbar from "../../components/Navbar.svelte";
-  import Stars from "../../components/Stars.svelte";
-  import Socials from "../../components/Socials.svelte";
-  import axios from "axios";
-  let skills = []
-
-  axios.get("https://raw.githubusercontent.com/oriionn/portfoliov3/main/competences.json").then(res => {
-    skills = res.data
-  })
-</script>
-
 <main class="text-primary relative w-screen h-screen">
   <Navbar currentPage="about" />
   <div class="content flex flex-col items-center justify-center w-screen absolute top-20">
@@ -37,8 +24,41 @@
   <Stars />
 </main>
 
+<script>
+  import "../app.css";
+  import Navbar from "../../components/Navbar.svelte";
+  import Stars from "../../components/Stars.svelte";
+  import Socials from "../../components/Socials.svelte";
+  import axios from "axios";
+  let skills = []
+
+  axios.get("https://raw.githubusercontent.com/oriionn/portfoliov3/main/competences.json").then(res => {
+    skills = res.data
+  })
+</script>
+
 <style>
     * {
         overflow-x: hidden;
     }
 </style>
+
+<svelte:head>
+  <title>Orion - About me</title>
+
+  <meta name="keywords" content="orion, developer, discord.js, next.js, react.js, node.js, javascript, css, tailwind, rust, tauri"/>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="author" content="orion, contact@oriondev.fr">
+  <meta name="description" content="The simple portfolio of Orion">
+
+  <meta property="og:title" content="Orion - About"/>
+  <meta property="og:type" content="portfolio"/>
+  <meta property="og:description" content="The simple portfolio of Orion"/>
+  <meta property="og:email" content="contact@oriondev.fr"/>
+  <meta property="og:site_name" content="Orion"/>
+  <meta property="og:url" content="https://oriondev.fr"/>
+  <meta property="og:image" content="/favicon.png"/>
+  <meta property="og:country-name" content="FR"/>
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+</svelte:head>
