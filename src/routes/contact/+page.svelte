@@ -25,7 +25,7 @@
 
 
 <svelte:head>
-  <title>Orion - About me</title>
+  <title>Orion - Contact</title>
 
   <meta name="keywords" content="orion, developer, discord.js, next.js, react.js, node.js, javascript, css, tailwind, rust, tauri"/>
   <meta name="robots" content="noindex,nofollow" />
