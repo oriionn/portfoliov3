@@ -14,11 +14,10 @@
 <main class="text-primary">
   <h1 class="max-[500px]:visible invisible absolute top-2 left-0 w-screen text-center text-3xl font-bold">My projects</h1>
   <Navbar currentPage="projects" />
-  <Socials />
   <div class="content flex flex-col items-center justify-center w-screen absolute top-20">
-    <div class="projects grid grid-cols-2 max-[1400px]:grid-cols-1 gap-x-12 gap-y-5">
-      {#each projects as project, index}
-        <div role="button" tabindex="0" class="project p-5 w-[500px] max-[500px]:w-[400px] h-auto max-[400px]:w-[95vw] bg-background2 rounded-2xl relative flex transition-transform transform hover:-translate-y-2" on:click={() => {
+    <div class="projects grid grid-cols-2 max-[1400px]:grid-cols-1 gap-x-12 gap-y-5 pb-5">
+      {#each projects as project}
+        <div role="button" tabindex="0" class="project p-5 w-[500px] max-[500px]:w-[400px] h-auto max-[400px]:w-[90vw] bg-background2 rounded-2xl relative flex transition-transform transform hover:-translate-y-2" on:click={() => {
           window.open(project.link, "_blank");
         }} on:keydown={() => {
           console.log("keydown");
