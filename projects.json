@@ -28,5 +28,11 @@
     "description": "Remove new logo of X for keep the little blue bird (Archived)",
     "link": "https://github.com/oriionn/nox",
     "image": "https://cdn.oriondev.fr/projects/nox.svg"
+  },
+  {
+    "name": "Portfolio",
+    "description": "My portfolio",
+    "link": "https://oriondev.fr",
+    "image": "https://www.oriondev.fr/favicon.png"
   }
 ]
