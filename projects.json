@@ -34,5 +34,11 @@
     "description": "My portfolio",
     "link": "https://oriondev.fr",
     "image": "https://www.oriondev.fr/favicon.png"
+  },
+  {
+    "name": "Archives",
+    "description": "My archive website look like terminal",
+    "link": "https://archives.oriondev.fr",
+    "image": "https://archives.oriondev.fr/favicon.png"
   }
 ]
