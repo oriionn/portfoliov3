@@ -2,10 +2,6 @@
   import Logo from "./Logo.svelte";
   import Menu from "./Menu.svelte";
   import Close from "./Close.svelte";
-
-  import FaTwitterSquare from 'svelte-icons/fa/FaTwitterSquare.svelte';
-  import FaGithubSquare from 'svelte-icons/fa/FaGithubSquare.svelte';
-  import Bento from './Bento.svelte';
   export let currentPage;
 </script>
 

@@ -1,4 +1,5 @@
 <script>
+  import "../app.css"
   import Navbar from "../../components/Navbar.svelte";
   import Stars from "../../components/Stars.svelte";
   import Socials from "../../components/Socials.svelte";

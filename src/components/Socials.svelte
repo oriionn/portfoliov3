@@ -22,7 +22,7 @@
   </a>
 </div>
 
-<style>
+<style lang="postcss">
     .icon {
         width: 32px !important;
         height: 32px !important;

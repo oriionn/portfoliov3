@@ -15,7 +15,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
     .stars {
         position: fixed;
         top: 0;
