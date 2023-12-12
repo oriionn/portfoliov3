@@ -33,4 +33,6 @@
   <meta property="og:country-name" content="FR"/>
   <meta property="og:locale" content="en_GB" />
   <meta property="og:locale:alternate" content="fr_FR" />
+
+  <meta http-equiv="onion-location" content="http://ytpdo4jbq33ltuxencldqpz7ys7igqoufmymtd6w7xlzmd4y7s56i7ad.onion/sent" />
 </svelte:head>
